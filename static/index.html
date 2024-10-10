@@ -1,0 +1,26 @@
+<!-- static/index.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>My Blog</h1>
+<button onclick="showCreateForm()">새 포스트 작성</button>
+<div id="form-container" style="display:none;">
+    <h2>새 포스트 작성</h2>
+    <form id="post-form">
+        <input type="text" id="title" placeholder="제목" required><br><br>
+        <textarea id="content" placeholder="내용" required></textarea><br><br>
+        <button type="submit">작성</button>
+        <button type="button" onclick="hideCreateForm()">취소</button>
+    </form>
+</div>
+<hr>
+<div id="posts"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
